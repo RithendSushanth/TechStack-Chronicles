@@ -69,38 +69,40 @@
 //     )
 // }
 
+import fs from "fs";
+import matter from "gray-matter";
+import { notFound } from "next/navigation";
+import rehypeDocument from 'rehype-document';
+import rehypeFormat from 'rehype-format';
+import rehypeStringify from 'rehype-stringify';
+import remarkParse from 'remark-parse';
+import remarkRehype from 'remark-rehype';
+import { unified } from 'unified';
+import rehypePrettyCode from "rehype-pretty-code";
+import { transformerCopyButton } from '@rehype-pretty/transformers';
+import OnThisPage from "@/components/onthispage";
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import rehypeSlug from 'rehype-slug';
+import { CalendarIcon, UserIcon, ClockIcon } from 'lucide-react';
 
-import fs from "fs"
-import matter from "gray-matter"
-import { notFound } from "next/navigation"
-import rehypeDocument from 'rehype-document'
-import rehypeFormat from 'rehype-format'
-import rehypeStringify from 'rehype-stringify'
-import remarkParse from 'remark-parse'
-import remarkRehype from 'remark-rehype'
-import {unified} from 'unified'
-import rehypePrettyCode from "rehype-pretty-code"
-import { transformerCopyButton } from '@rehype-pretty/transformers'
-import OnThisPage from "@/components/onthispage"
-import rehypeAutolinkHeadings from 'rehype-autolink-headings'
-import rehypeSlug from 'rehype-slug'
-import { CalendarIcon, UserIcon, ClockIcon } from 'lucide-react'
+// Add the following line to specify Edge Runtime
+export const runtime = 'edge';
 
 export default async function Page({ params }) {
-    const filepath = `content/${params.slug}.md`
+    const filepath = `content/${params.slug}.md`;
     
-    if(!fs.existsSync(filepath)){ 
-        notFound() 
-        return 
+    if (!fs.existsSync(filepath)) { 
+        notFound(); 
+        return; 
     } 
 
-    const fileContent = fs.readFileSync(filepath, "utf-8")
-    const {content, data} = matter(fileContent)
+    const fileContent = fs.readFileSync(filepath, "utf-8");
+    const { content, data } = matter(fileContent);
 
     const processor = unified()
         .use(remarkParse)
         .use(remarkRehype)
-        .use(rehypeDocument, {title: data.title})
+        .use(rehypeDocument, { title: data.title })
         .use(rehypeFormat)
         .use(rehypeStringify) 
         .use(rehypeSlug)
@@ -109,17 +111,17 @@ export default async function Page({ params }) {
             theme: "github-dark",
             transformers: [
                 transformerCopyButton({
-                  visibility: 'always',
-                  feedbackDuration: 3_000,
+                    visibility: 'always',
+                    feedbackDuration: 3_000,
                 }),
             ],
-        })
+        });
 
-    const htmlContent = (await processor.process(content)).toString()
+    const htmlContent = (await processor.process(content)).toString();
 
     // Estimate read time (assuming 200 words per minute)
-    const wordCount = content.split(/\s+/).length
-    const readTime = Math.ceil(wordCount / 200)
+    const wordCount = content.split(/\s+/).length;
+    const readTime = Math.ceil(wordCount / 200);
 
     return (
         <div className="max-w-7xl mx-auto px-4 py-12 lg:flex lg:gap-12">
@@ -153,5 +155,5 @@ export default async function Page({ params }) {
                 </div>
             </aside>
         </div>
-    )
+    );
 }

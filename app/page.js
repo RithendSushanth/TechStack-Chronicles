@@ -131,6 +131,7 @@ import Typed from 'typed.js'
 import React, { useRef, useEffect } from 'react'
 import { ArrowRight, Rss } from 'lucide-react'
 import { useRouter } from "next/navigation"
+import Image from "next/image"
 
 export default function Home() {
   const el = useRef(null)
@@ -194,7 +195,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full mt-12 lg:mt-0 lg:w-1/2">
-            <img
+            <Image
               src="https://www.creative-tim.com/twcomponents/svg/website-designer-bro-purple.svg"
               alt="Tech illustration"
               className="w-full h-full max-w-md mx-auto"
