@@ -237,7 +237,7 @@ export default function About() {
               Passionate developer, lifelong learner, and tech enthusiast
             </p>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
-              Hello! I'm I, a software developer dedicated to sharing knowledge and experiences in the world of programming. This blog is my platform to help others on their coding journey, whether they're just starting out or looking to sharpen their skills.
+              Hello! I&apos;m I, a software developer dedicated to sharing knowledge and experiences in the world of programming. This blog is my platform to help others on their coding journey, whether they&apos;re just starting out or looking to sharpen their skills.
             </p>
             <Button>
               Explore My Work
@@ -266,7 +266,7 @@ export default function About() {
       <section className="bg-gray-100 dark:bg-gray-800 py-16 md:py-24">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
-            I's Coding Journey
+            Rithend&apos;s Coding Journey
           </h2>
           <Tabs defaultValue="step1" className="w-full">
             <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8">
@@ -303,7 +303,7 @@ export default function About() {
 
       <section className="container mx-auto px-4 py-16 md:py-24 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
-          Let's Connect
+          Let&apos;s Connect
         </h2>
         <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
           Have questions or want to collaborate? Feel free to reach out!
