@@ -195,7 +195,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full mt-12 lg:mt-0 lg:w-1/2">
-            <Image
+            <img
               src="https://www.creative-tim.com/twcomponents/svg/website-designer-bro-purple.svg"
               alt="Tech illustration"
               className="w-full h-full max-w-md mx-auto"
