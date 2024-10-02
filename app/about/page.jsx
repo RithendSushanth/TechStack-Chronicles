@@ -139,6 +139,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { useState, useEffect } from 'react'
 import Confetti from 'react-confetti'
+import Link from 'next/link'
 
 export default function About() {
   const [showConfetti, setShowConfetti] = useState(false)
@@ -148,22 +149,22 @@ export default function About() {
   const journeySteps = [
     {
       title: "The Spark of Curiosity",
-      description: "My coding journey began in high school when he stumbled upon Python. What started as a simple curiosity quickly turned into a passion, as he spent countless hours experimenting with code and building small projects.",
+      description: "My coding journey began in high school when i stumbled upon Python. What started as a simple curiosity quickly turned into a passion, as he spent countless hours experimenting with code and building small projects.",
       image: "/assets/about-assets/curiosity.png"
     },
     {
       title: "Diving Deeper",
-      description: "After mastering the basics, I explored more complex topics like data structures, algorithms, and web development. He enrolled in online courses and coding bootcamps, expanding his skill set and taking on freelance projects.",
+      description: "After mastering the basics, I explored more complex topics like data structures, algorithms, and web development. I enrolled in online courses and coding bootcamps, expanding my skill set and taking on freelance projects.",
       image: "/assets/about-assets/technology.jpg"
     },
     {
       title: "Taking on Challenges",
-      description: "With years of experience, I tackled bigger challenges, contributing to open-source projects and developing his own applications. Each obstacle became a stepping stone to becoming the skilled developer he is today.",
+      description: "With years of experience, I tackled bigger challenges, contributing to open-source projects and developing my own applications. Each obstacle became a stepping stone to becoming the skilled developer i am today.",
       image: "/assets/about-assets/challenges.png"
     },
     // {
     //   title: "Giving Back",
-    //   description: "Today, I am not only a proficient coder but also a mentor. He contributes to the programming community by writing tutorials, giving talks, and helping new coders. For I, coding is a lifelong journey of learning and sharing knowledge.",
+    //   description: "Today, I am not only a proficient coder but also a mentor. He contributes to the programming community by writing tutorials, giving talks, and helping new coders. For me, coding is a lifelong journey of learning and sharing knowledge.",
     //   image: "/assets/about-assets/giving.jpg"
     // }
   ]
@@ -231,16 +232,17 @@ export default function About() {
             className="w-full md:w-1/2 mb-8 md:mb-0"
           >
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-              About <span className="text-primary">Rithend</span>
+              About <span className="text-primary">Me</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-6">
               Passionate developer, lifelong learner, and tech enthusiast
             </p>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
-              Hello! I&apos;m I, a software developer dedicated to sharing knowledge and experiences in the world of programming. This blog is my platform to help others on their coding journey, whether they&apos;re just starting out or looking to sharpen their skills.
+              Hello! I&apos;m Rithend, a software developer dedicated to sharing knowledge and experiences in the world of programming. This blog is my platform to help others on their coding journey, whether they&apos;re just starting out or looking to sharpen their skills.
             </p>
             <Button>
               Explore My Work
+              <Link href="/blogs" className="ml-2 h-4 w-4" />
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </motion.div>
