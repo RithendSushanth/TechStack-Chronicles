@@ -2,11 +2,11 @@
 title: Hosting Vite Frontend and PHP Backend in Production
 description: A step-by-step guide to setting up a Vite frontend and PHP backend on an EC2 instance for production, including NGINX configuration, database integration, and cost considerations.
 slug: hosting-vite-frontend-php-backend
-date: 22/09/2024
+date: 09/22/2024 
 author: Rithend Sushanth
 image: https://images.unsplash.com/photo-1599507593499-a3f7d7d97667?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 ---
-
+<!-- date format mm/dd/yyyy -->
 ### **1. EC2 Setup for Production**
 
 - **Operating System**: Use **Ubuntu** on your EC2 instance.

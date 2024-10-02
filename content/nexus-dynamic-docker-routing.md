@@ -2,7 +2,7 @@
 title: Nexus Dynamic Docker Routing
 description: Learn how to build Nexus, a DIY dynamic Docker routing system for reverse proxy and container management. A hands-on guide for Docker enthusiasts looking to explore container orchestration.
 slug: nexus-dynamic-docker-routing
-date: 02/10/2024
+date: 10/02/2024
 author: Rithend Sushanth
 image: https://www.docker.com/wp-content/uploads/2022/12/Docker-Temporary-Image-Social-Thumbnail-1200x630-1.png
 ---

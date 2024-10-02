@@ -2,7 +2,7 @@
 title: Microservices
 description: An overview of microservices architecture, its characteristics, benefits, and challenges, with an example of an online shopping platform.
 slug: microservices-architecture
-date: 25/09/2024
+date: 09/25/2024
 author: Rithend Sushanth
 image: https://images.unsplash.com/photo-1667372459470-5f61c93c6d3f?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 
