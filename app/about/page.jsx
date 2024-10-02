@@ -235,7 +235,7 @@ export default function About() {
               About <span className="text-primary">Me</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-6">
-              Passionate developer, lifelong learner, and tech enthusiast
+              Passionate developer, learner and tech enthusiast
             </p>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
               Hello! I&apos;m Rithend, a software developer dedicated to sharing knowledge and experiences in the world of programming. This blog is my platform to help others on their coding journey, whether they&apos;re just starting out or looking to sharpen their skills.
