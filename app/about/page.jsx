@@ -578,10 +578,10 @@ export default function AboutPage() {
             className="space-y-6"
           >
             <h1 className="text-5xl font-extrabold text-gray-900 dark:text-white leading-tight">
-              Hey, I'm <span className="text-blue-600">Rithend</span>
+              Hey, I&apos;m <span className="text-blue-600">Rithend</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-              A passionate software developer who turns curiosity into code. I'm on a mission to create innovative solutions and share knowledge that empowers others in their tech journey.
+              A passionate software developer who turns curiosity into code. I&apos;m on a mission to create innovative solutions and share knowledge that empowers others in their tech journey.
             </p>
             <div className="flex space-x-4">
               <Button asChild variant="outline" className="group">
