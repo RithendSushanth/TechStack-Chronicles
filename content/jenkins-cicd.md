@@ -170,3 +170,8 @@ docker-compose up -d
 ## Step 6: Test Deployment
 
 Visit `http://your-ec2-public-ip:8000` in your browser to verify that the application is running.
+
+![Jenkins CI/CD](/assets/Jenkins-ci-cd-1.png)
+![Jenkins CI/CD](/assets/Jenkins-ci-cd-2.png)
+![Jenkins CI/CD](/assets/Jenkins-ci-cd-3.png)
+![Jenkins CI/CD](/assets/Jenkins-ci-cd-dockerfile-4.png)
