@@ -4,7 +4,7 @@ description: "A step-by-step guide to setting up a Jenkins CI/CD pipeline on an 
 slug: jenkins-cicd
 date: 02/09/2025
 author: Rithend Sushanth
-image: https://images.unsplash.com/photo-1599507593499-a3f7d7d97667?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGV
+image: https://www.learntek.org/blog/wp-content/uploads/2018/05/jenkins_image.png
 ---
 
 # Setting Up a CI/CD Pipeline with Jenkins, Docker, and AWS EC2
